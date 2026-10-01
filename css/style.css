@@ -1,61 +1,58 @@
-```css
-/* Basic settings for the entire website */
+.top-menu {
+    display: flex;  /*Make it so we can chose how we want to arrange the stuff */
+    justify-content: space-between; /*Put space between items so thay are pushed apart */
+    align-items: center; /*Align the stuff verticlaly*/
+    
+    padding: 20px; /*Add padding within the header */
+    
+    background-color: #222222;
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-    color: #222;
 }
 
 
-/* Header */
-
-header {
-    background-color: #222;
-    color: white;
-    padding: 40px;
-    text-align: center;
+.enormous_text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    margin: 5px;
 }
-
-
-/* Main content */
-
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-}
-
-
-/* Buttons */
-
-.buttons {
+.box {
     display: flex;
-    gap: 15px;
-    margin-top: 30px;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
 }
 
-.buttons a {
-    display: block;
-    padding: 15px 25px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.box h3 {
+    margin: 0;
 }
 
-.buttons a:hover {
-    background-color: #555;
+.box h6 {
+    margin: 0;
+}
+.logo-area span {
+    color: white; /*Find the span within the the .logo-area and apply this to that*/
+    font-size: 30px;
 }
 
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #666;
+.logo-area img {
+    width: 50px;
 }
-```
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between components */
+
+} 
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white; /* Makes the a (links) in menu white*/
+    text-decoration: none; /* Removes the underline that otherwise exist */
+
+}
