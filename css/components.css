@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+}
+
+html {
+    font-family: 'Figtee', 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    display:block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom_menu {
+    background-color: #472EBF;
+    color: white;
+    font-family: "Figtree", "Segoe UI", sans-serif; 
+}
+
+.pattern_bottom_image_box {
+    display: flex;
+    overflow: hidden;
+    background-color: #472EBF; 
+    color: #D8D6F0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+
+.pattern_image_bottom {
+    width: 100%;
+    max-width: none;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.footer_content {  
+    margin-inline: auto;
+    display:grid;
+    max-width: 72rem;
+    gap: 1.5rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+.footer_content .crosslab_text{
+    font-family: "Figtree", "Segoe UI", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2; /*font-display text-3xl font-extrabold*/
+    font-weight: 800;
+}
+
+.under_text { /* mt-2 max-w-sm text-sm opacity-80 */
+    margin-top: 0.5rem;
+    max-width: 25rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+
+
+
+.question {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+
+.font-bold {
+    font-weight:700;
+}
+
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content  a {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: inherit;
+    text-decoration:underline !important;
+    text-underline-offset: 2px;
+}
+
+
