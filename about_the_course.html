@@ -6,116 +6,165 @@
         <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
 
         <title>Crosslab</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        />
         <link rel = "stylesheet" href = "css/about_course.css">
+        <link rel="stylesheet" href="css/components.css">
     </head>
 
     <body>
-        <nav class="top-menu">
-            <div class="logo-area">
-                <img src="images/logo.svg" alt="Crosslab logo logo">
-                <span>CROSSLAB</span>
-            </div>
-
-            <div class="menu">
-                <a href="About_us.html">About us</a> <!--Opens About_us.html-->
-                <a href="about_the_course.html">About course</a>
-                <a href="apply.html">Apply</a>
-                <a href="countries.html">Countries</a>
-            </div>
-        </nav>
-        <section class="introduction">
-            <div class="fading_screen">
-                <img
-                    src="images/background.jpg"
-                    alt=""
-                    class = "student_fading"
-                >
-            </div>
-            <div class="intro_info">
-                <h1>
-                    Build. Learn. Exchange.
-                </h1>
-                <p>
-                    A 4-week programme where students from Chalmers, Sweden
-                    and University of Rwanda, Rwanda collaborate to solve real 
-                    problems in the other country.
-                </p>
-
-                <a href="apply.html" class="apply_course_button">
-                    APPLY NOW
-                    <img src="images/right_arrow.svg" alt="">
-                </a>
-            </div>
-    
-            
-        </section>
-        <section class = "summary_section">
-            <div class = "basic_summary">
-                <h1>
-                    About the course
-                </h1>
-                <p id="crosslab_basic_info_text"></p>
-                <script>
-                    fetch("text/what_is_crosslab_summary.txt")
-                        .then(response => response.text())
-                        .then(data => {
-                            document.getElementById("crosslab_basic_info_text").innerHTML = data;
-                        });
-                </script>
-            </div>
-            <div class = "important_info_dots">
-                <h1>
-                    Basic information
-                </h1>
-                <div class = "basic_info_block">
-                    <img 
-                        src="images/clock-dark.svg"
+        <div id="header"></div>
+        <main class = "min-h-[60vh]">
+            <section class = "hero">
+                <div class ="patter-box">
+                    <img
+                        src = "images/corner_course.svg"
                         alt =""
-                        class = "logo_images_basic"
+                        class = "pattern_image"
                     >
-                    <div class = "basic_info_text">
-                        <h4>
-                            Duration
-                        </h4>
-                        <h5>
-                            4 weeks (1 evening / week)
-                        </h5>
+                </div>
+                <div class = "hero_text">
+                    <p class = "about_course">
+                        About the course
+                    </p>
+                    <h1 class="basic_stats_text">
+                        4 evenings, 2 countries, 1 real problem
+                    </h1>
+                    <div class = "basic_student_info">
+                        Students from the University of University of Rwanda and Chalmers design solutions for each other, with feedback from the people who use them.
                     </div>
                 </div>
-
-                <div class = "basic_info_block">
-                    <img 
-                        src="images/location-pin-dark.svg"
-                        alt =""
-                        class = "logo_images_basic"
-                    >
-                    <div class = "basic_info_text">
-                        <h4>
-                            Location
-                        </h4>
-                        <h5>
-                            FUSE (Sweden), UniPod (Rwanda)
-                        </h5>
-                    </div>
+            </section>
+            <section class = "basic_course_info">
+                <div>
+                    <h2 class = "What_do">
+                        What you will do
+                    </h2>
+                    <p class = "crosslab_info_1">
+                        Crosslab is a free evening course that runs for one month. You join a small team at your own university and get paired with a 
+                        buddy group in the other country. Your team design a solution to a real problem in the other country, under a shared theme.
+                    </p>
+                    <p class = "crosslab_info_2">
+                        The course follows human-centered design. You cannot guess what people in the other country, so instead you get the chance to ask them. Your buddy group
+                        will provide you with information, react to your ideas and give feedback on your prototype. 
+                    </p>
+                    <p class = "crosslab_info_3">
+                        Sessions are hands-on in the makerspaces, FUSE at Chalmers and UniPod at the Univeristy Of Rwanda, linked online
+                        so both sides can work together. 
+                    </p>
                 </div>
-
-
-                <div class = "basic_info_block">
-                    <img 
-                        src="images/calendar-days-svgrepo-com.svg"
-                        alt =""
-                        class = "logo_images_basic"
-                    >
-                    <div class = "basic_info_text">
-                        <h4>
-                            Start date
-                        </h4>
-                        <h5>
-                            1st September
-                        </h5>
+                <div class = "line?"></div>
+                <dl class = "basic_info_list">
+                    <div class = "basic_info_list_item">
+                        <img
+                            src = "images/clock-0500-svgrepo-com.svg"
+                            alt = ""
+                            class = "icon"
+                        >
+                        <div class = "basic_info_ind_box">
+                            <dt class = "info_title">Duration</dt>
+                            <dd class = "info_info"> 4 weeks</dd>
+                        </div>
                     </div>
+                    <div class = "basic_info_list_item">
+                        <img
+                            src = "images/calendar-days-svgrepo-com.svg"
+                            alt = ""
+                            class = "icon"
+                        >
+                        <div>
+                            <dt class = "info_title">Sessions</dt>
+                            <dd class = "info_info"> 1 evening/week, 17:00 to 20:00</dd>
+                        </div>
+                    </div>
+                    <div class = "basic_info_list_item">
+                        <img 
+                            src = "images/location-pin-dark.svg"
+                            alt = ""
+                            class = "icon"
+                        >
+                        <div>
+                            <dt class = "info_title">Location</dt>
+                            <dd class = "info_info">FUSE (Chalmers) and UniPod (UR)</dd>
+                        </div>
+                    </div>
+                    <div class = "basic_info_list_item">
+                        <img
+                            src = "images/wallet-svgrepo-com.svg"
+                            alt = ""
+                            class = "icon"
+                        >
+                        <div>
+                            <dt class = "info_title">Cost</dt>
+                            <dd class = "info_info">Free</dd>
+                        </div>
+                    </div>
+                </dl>
+            </section>
+            <section class = "what_you_gain">
+                <div class = >
+                    <div class = "">
+                        <h2 class = "gain_text">
+                            What you gain
+                        </h2>
+                        <ul class = "gains_list">
+                            <li class = "gain_point">
+                                <span class = "number">
+                                    1
+                                </span>
+                                <div>
+                                    <p class = "gain_title">Design across cultures</p>
+                                    <p class = "gain_info">Practice designing for users whose context differs from yours.</p>
+                                </div>
+                            </li>
+                            <li class = "gain_point">
+                                <span class = "number">
+                                    2
+                                </span>
+                                <div>
+                                    <p class = "gain_title">Human-centered design</p>
+                                    <p class = "gain_info">Interviews, problem framing, prototyping, et.c</p>
+                                </div>
+                            </li>
+                            <li class = "gain_point">
+                                <span class = "number">
+                                    3
+                                </span>
+                                <div>
+                                    <p class = "gain_title">International network</p>
+                                    <p class = "gain_info">Make friends in another country</p>
+                                </div>
+                            </li>
+                            <li class = "gain_point">
+                                <span class = "number">
+                                    4
+                                </span>
+                                <div>
+                                    <p class = "gain_title">Building stuff</p>
+                                    <p class = "gain_info">Hands-on time with tools at Fuse or UniPod</p>
+                                </div>
+                            </li>
+                            <li class = "gain_point">
+                                <span class = "number">
+                                    5
+                                </span>
+                                <div>
+                                    <p class = "gain_title">CV</p>
+                                    <p class = "gain_info">Good on CV</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <img
+                        srv = 
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+        <div id="footer"></div>
+            <script src="js/components.js"></script>
     </body>
 </html>

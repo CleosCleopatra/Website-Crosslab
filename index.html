@@ -8,6 +8,8 @@
         <title>Crosslab</title>
         <link rel = "stylesheet" href = "css/style.css">
         <link rel="stylesheet" href="css/components.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
 
     <body>
@@ -41,93 +43,45 @@
             >
         </section>
 
-        <section class = "About_the_course">
-            <div class = "text_block_about">
+        
 
-                <h1>
-                    What is Crosslab?
-                </h1>
-
-                <p id="crosslab_basic_info_text"></p>
-                <script>
-                    fetch("text/what_is_crosslab_summary.txt")
-                        .then(response => response.text())
-                        .then(data => {
-                            document.getElementById("crosslab_basic_info_text").innerHTML = data;
-                        });
-                </script>
-            </div>
-
-            <div class="student_pic_image_holder">
-                <img
-                    src = "images/student_pic.jpeg"
-                    alt = ""
-                    class = "about_course_image"
-                >
-            </div>
-
-
-
-
-        </section>
-        <section class="facts_block">
-            <div class = "facts_block_only">
-                <div class ="info_block">
-                    <img
-                        src="images/clock-0500-svgrepo-com.svg"
-                        alt = ""
-                        class="info_image"
-                    >
-                    <h1>
-                        Duration
-                    </h1>
-                    <p>
+        <section class = "new_facts_block"> 
+            <dl class="table_info">
+                <div class = "grid_item"> 
+                    <dt class = "grid_title">
+                        Cost
+                    </dt>
+                    <dd class = "grid_information">
+                        Free
+                    </dd>
+                </div>
+                <div class = "grid_item">
+                    <dt class ="grid_title">
+                        Length
+                    </dt>
+                    <dd class = "grid_information">
                         4 weeks
-                    </p>
-                    <p>
-                        (1 evening/week)
-                    </p>
+                    </dd>
                 </div>
-                <div class="vl"></div>
-                <div class ="info_block">
-                    <img
-                        src="images/location-pin-svgrepo-com.svg"
-                        alt = ""
-                        class="info_image"
-                    >
-                    <h1>
-                        Location
-                    </h1>
-                    <p>
-                        Sweden: FUSE
-                    </p>
-                    <p>
-                        Rwanda: UniPod
-                    </p>
+                <div class = "grid_item">
+                    <dt class = "grid_title">
+                        Format
+                    </dt>
+                    <dl class = "grid_information"> 
+                        1 evening/week
+                    </dl>
                 </div>
-
-                
-                <div class="vl"></div>
-
-                <div class ="info_block">
-                    <img
-                        src="images/people-svgrepo-com.svg"
-                        alt =""
-                        class = "info_image"
-                    >
-                    <h1>
-                        Who its for
-                    </h1>
-                    <p>
-                        Engineering and architecture students
-                        at Chalmers and UR
-                    </p>
-                    
+                <div class="grid_item">
+                    <dt class = "grid_title">
+                        Start date
+                    </dt>
+                    <dl class = "grid_information">
+                        19 Jan 1975
+                    </dl>
                 </div>
-
-            </div>
-
+            </dl>
         </section>
+        
         <div id="footer"></div>
         <script src="js/components.js"></script>
     </body>
