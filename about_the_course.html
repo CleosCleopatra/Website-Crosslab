@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+
+        <title>Crosslab</title>
+        <link rel = "stylesheet" href = "css/about_course.css">
+    </head>
+
+    <body>
+        <nav class="top-menu">
+            <div class="logo-area">
+                <img src="images/logo.svg" alt="Crosslab logo logo">
+                <span>CROSSLAB</span>
+            </div>
+
+            <div class="menu">
+                <a href="About_us.html">About us</a> <!--Opens About_us.html-->
+                <a href="about_the_course.html">About course</a>
+                <a href="apply.html">Apply</a>
+                <a href="countries.html">Countries</a>
+            </div>
+        </nav>
+        <section class="introduction">
+            <div class="fading_screen">
+                <img
+                    src="images/background.jpg"
+                    alt=""
+                    class = "student_fading"
+                >
+            </div>
+            <div class="intro_info">
+                <h1>
+                    Build. Learn. Exchange.
+                </h1>
+                <p>
+                    A 4-week programme where students from Chalmers, Sweden
+                    and University of Rwanda, Rwanda collaborate to solve real 
+                    problems in the other country.
+                </p>
+
+                <a href="apply.html" class="apply_course_button">
+                    APPLY NOW
+                    <img src="images/right_arrow.svg" alt="">
+                </a>
+            </div>
+    
+            
+        </section>
+        <section class = "summary_section">
+            <div class = "basic_summary">
+                <h1>
+                    About the course
+                </h1>
+                <p id="crosslab_basic_info_text"></p>
+                <script>
+                    fetch("text/what_is_crosslab_summary.txt")
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById("crosslab_basic_info_text").innerHTML = data;
+                        });
+                </script>
+            </div>
+            <div class = "important_info_dots">
+                <h1>
+                    Basic information
+                </h1>
+                <div class = "basic_info_block">
+                    <img 
+                        src="images/clock-dark.svg"
+                        alt =""
+                        class = "logo_images_basic"
+                    >
+                    <div class = "basic_info_text">
+                        <h4>
+                            Duration
+                        </h4>
+                        <h5>
+                            4 weeks (1 evening / week)
+                        </h5>
+                    </div>
+                </div>
+
+                <div class = "basic_info_block">
+                    <img 
+                        src="images/location-pin-dark.svg"
+                        alt =""
+                        class = "logo_images_basic"
+                    >
+                    <div class = "basic_info_text">
+                        <h4>
+                            Location
+                        </h4>
+                        <h5>
+                            FUSE (Sweden), UniPod (Rwanda)
+                        </h5>
+                    </div>
+                </div>
+
+
+                <div class = "basic_info_block">
+                    <img 
+                        src="images/calendar-days-svgrepo-com.svg"
+                        alt =""
+                        class = "logo_images_basic"
+                    >
+                    <div class = "basic_info_text">
+                        <h4>
+                            Start date
+                        </h4>
+                        <h5>
+                            1st September
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

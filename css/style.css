@@ -1,58 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body{
+    margin: 0; /* remove white border around page*/
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* vh: browser windows height */
+    overflow: hidden;
+    background: #4930BC;
+
+    color: white;
+}
+
 .top-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;  /*Make it so we can chose how we want to arrange the stuff */
     justify-content: space-between; /*Put space between items so thay are pushed apart */
     align-items: center; /*Align the stuff verticlaly*/
     
-    padding: 20px; /*Add padding within the header */
-    
-    background-color: #222222;
+    padding: 2.2vh 2.3vw; /*Add padding within the header */
+
+    z-index: 3;
 
 }
 
-
-.enormous_text {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333333;
-    margin: 5px;
-}
-.box {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 10px;
-}
-
-.box h3 {
-    margin: 0;
-}
-
-.box h6 {
-    margin: 0;
-}
-.logo-area span {
-    color: white; /*Find the span within the the .logo-area and apply this to that*/
-    font-size: 30px;
-}
-
-.logo-area img {
-    width: 50px;
-}
 
 .logo-area {
+    left: 3vw;
     display: flex;
     align-items: center;
-    gap: 10px; /* Gap between components */
+    gap: 0.2vw; /* Gap between components */
+    font-size: 2.4vw;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white
 
 } 
 
+.logo-area img {
+    width: 4vw;
+}
+
+
 .menu {
     display: flex;
-    gap: 20px;
+    gap: 2vw;
 }
 
 .menu a {
     color: white; /* Makes the a (links) in menu white*/
     text-decoration: none; /* Removes the underline that otherwise exist */
+    font-size: 1.2vw;
+    padding: 0.05vw 0.15vw;
+    -webkit-text-stroke: 3px #4930BC;
+    paint-order: stroke fill;
 
+    font-weight: 300;
+}
+
+
+.hero-text {
+    position: absolute;
+
+    left: 4.5%;
+    top: 24.5%;
+    z-index: 2; /* Higher z-index, further up */
+}
+
+.tagline-text {
+    margin: 0 0 3vw 2vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.hero h1{
+    margin: 0;
+    font-size: 14vw; /* Make it possible for the font size to change, but never to less than 60 or more than 124*/
+    font-weight: bold;
+    line-height: 0.8;
+
+    letter-spacing: -0.5vw;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.description {
+    margin: 1vw 0 0 2vw;
+    font-size: 2.3vw;
+    line-height: 1.2;
+    font-weight: 200;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.explore_course_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 5px;
+
+    width: 32vw;
+    margin: 2.5vw 0 0 1vw;
+
+
+    padding: 1.2vw 2.6vw;
+
+    background-color: white;
+    color: #4930BC;
+    text-decoration: none;
+
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.explore_course_button span {
+    font-size: 1.8vw
+}
+
+.explore_course_button img {
+    width: 25px;
+    height: auto;
+}
+
+.explore_course_button:hover {
+    background-color: #eeeeee;
+}
+
+
+.geometric-pattern {
+    position: absolute;
+    
+    right: 0;
+    top: 2vh;
+    
+    width: 35%;
+    height: auto;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+
+.About_the_course {
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 75vh; /* vh: browser windows height */
+    overflow: hidden;
+    color: #4930BC;
+
+    background: white;
+
+    display: flex;
+
+
+}
+
+.text_block_about {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0vh 10vh;
+}
+
+.text_block_about p{
+    color: #2b3384;
+    line-height: 1.7;
+    margin: 0.6vh 0;
+
+}
+
+.About_the_course h1{
+    font-size: 5.5vh;
+    margin-bottom: 0;
+}
+
+
+.student_pic_image_holder {
+    margin: 7vh 10vh 0 0;
+}
+
+.about_course_image {
+    border-radius: 1vh;
+    min-height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+
+.facts_block {
+    background-color: #4930BC;
+    align-items: center;
+    width: 100%;
+    padding: 5vw 0vw 5vw 0vw;
+    display: flex;
+}
+
+.facts_block_only {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    width: 100%;
+    margin: 0vw 7vw 0vw 7vw;
+
+
+}
+
+.info_block {
+
+    align-items: center;
+    justify-content: center;
+    margin: 0vw 0vw 0 5vw;
+    color:white;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.info_block p{
+    width: 15vw;
+    line-height: 1.5;
+    font-size: medium;
+    margin: 0 0 0 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.info_image {
+    width: 7vw;
+}
+
+
+.vl {
+  border-left: 2px solid white;
+  height:  10vw;
+  margin-top: 9vw;
+}
+
+
+.apply_course {
+    width: 100%;
+    background-color: #d4d8ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upcoming_date {
+    background-color: white;
+    margin: 2vw 0 2vw 4vw;
+    width: 42vw;
+    padding: 0 0 0 0;
+    box-shadow: 0 0 20px rgba(3, 3, 3, 0.15);
+    color:#4930BC;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.date_label {
+    display: flex;
+    margin: 0 0 -1vw 0;
+}
+
+.date_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#4930BC;
+
+}
+
+.date_block h1{
+    font-size: 1.5vw;
+    font-weight: 1000;
+    margin: 1vw 0 1vw 2vw;
+}
+
+.date_block h2{
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin: 0 2vw 0 0;
+}
+
+.hl {
+    border-top: 2px solid #d4d8ff;
+    width:  40vw;
+    margin-left: 1vw;
+}
+
+.calender_image {
+    width: 4vw;
+    margin: 0 1vw 0 2vw;
+}
+
+
+
+.ready_to_join {
+    background-color: #4930BC;
+    width: 42vw;
+    margin: 2vw 4vw 2vw 0;
+    border-radius: 1vw;
+    padding: 2vw;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.arrow_right_icon{
+    width: 4vw;
 }

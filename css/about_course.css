@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body{
+    margin: 0; /* remove white border around page*/
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.top-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;  /*Make it so we can chose how we want to arrange the stuff */
+    justify-content: space-between; /*Put space between items so thay are pushed apart */
+    align-items: center; /*Align the stuff verticlaly*/
+    
+    padding: 2.2vh 2.3vw; /*Add padding within the header */
+
+    z-index: 3;
+
+}
+
+
+.logo-area {
+    left: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw; /* Gap between components */
+    font-size: 2.4vw;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white
+
+} 
+
+.logo-area img {
+    width: 4vw;
+}
+
+
+.menu {
+    display: flex;
+    gap: 2vw;
+}
+
+.menu a {
+    color: white; /* Makes the a (links) in menu white*/
+    text-decoration: none; /* Removes the underline that otherwise exist */
+    font-size: 1.2vw;
+    padding: 0.05vw 0.15vw;
+    -webkit-text-stroke: 3px #4930BC;
+    paint-order: stroke fill;
+
+    font-weight: 300;
+}
+
+.fading_screen {
+    position: relative;
+    width: 100vw;
+}
+
+.fading_screen img {
+    display: block;
+    width:100%;
+}
+
+.fading_screen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to left,
+        transparent 20%,
+        #3020b8 100%
+    );
+}
+
+
+.apply_course_button{
+    margin: 0 0 0 0;
+    background: white;
+    border-radius: 10%;
+    color: #3020b8;
+    padding: 1vw 3vw 1vw 3vw;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.apply_course_button img{
+    width: 1vw;
+}
+
+.introduction {
+    position: relative;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.intro_info {
+    position: absolute;
+    top: 7vw;
+    left: 2vw;
+    color: white;
+    width: 30vw;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.intro_info h1{
+    font-size: 4vw;
+    margin: 0 0 1.5vw 0;
+}
+
+.intro_info p{
+    margin: 0 0 3vw 0;
+}
+
+.apply_course_button {
+    width: 5vw;
+    background-color: white;
+    border-radius: 1vw;
+
+}
+
+.summary_section {
+    display: flex;
+}
+
+.basic_summary {
+    margin: 1.5vw 2vw 1vw 2vw;
+    width: 44vw;
+    color: #3020b8;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.basic_summary p{
+    font-size: 1.3vw;
+}
+
+.important_info_dots {
+    margin: 2.5vw 0 0 0;
+    background: #F0F3FE;
+    border-radius: 2vw;
+    padding: 2.5vw;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.important_info_dots h1{
+    color: #3020b8;
+    font-size: 3vw;
+    padding: 0 0 1vw 0;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0 0 0 0;
+}
+
+.basic_info_block {
+    display: flex;
+}
+
+.logo_images_basic {
+    width: 3vw;
+}
+
+.basic_info_text {
+    color: #3020b8;
+    line-height: 0vw;
+    padding: 0 0 0 2vw;
+}
+
+.basic_info_text h5{
+    font-weight: 200;
+}
+
+
