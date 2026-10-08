@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
 
+
 *,
 *::before,
 *::after {
@@ -10,11 +11,13 @@
 }
 
 html {
-    font-family: 'Figtee', 'Segoe UI', sans-serif;
+    font-family: 'Figtree', 'Segoe UI', sans-serif;
     line-height: 1.5;
     text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+
+
 
 img {
     display:block;
@@ -101,3 +104,127 @@ img {
 }
 
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  background-color: #472EBF;
+  color: white;
+}
+
+.site-header__inner {
+  max-width: 72rem;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.75rem 1.25rem;
+}
+
+
+.site-logo {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: block;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navigation */
+
+.site-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  display: none;
+  flex-direction: column;
+
+  padding: 0 1.25rem 1rem;
+
+  background-color: #472EBF;
+}
+
+.nav-link {
+  display: block;
+
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.25rem;
+
+  border-radius: 9999px;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  color: white;
+  text-decoration: none;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #472EBF;
+}
+
+
+.nav-link.active {
+  background-color: white;
+  color: #472EBF;
+}
+
+
+.menu-toggle:checked ~ .site-nav {
+  display: flex;
+}
+
+
+@media (min-width: 768px) {
+
+  .menu-button {
+    display: none;
+  }
+
+  .site-nav {
+    position: static;
+
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 0.25rem;
+
+    padding: 0;
+  }
+
+  .nav-link-about .nav-link-apply .nav-link-countries nav-link-about-us nav-link-FAQ {
+    margin-top: 0;
+  }
+}

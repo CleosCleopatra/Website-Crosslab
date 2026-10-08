@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="-1.5 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    
-    <title>wallet</title>
-    <desc>Created with Sketch Beta.</desc>
-    <defs>
-
-</defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-257.000000, -774.000000)" fill="#000000">
-            <path d="M285,793 L280,793 C279.448,793 279,793.448 279,794 L279,798 C279,798.553 279.448,799 280,799 L285,799 L285,804 C285,804.553 284.552,805 284,805 L260,805 C259.448,805 259,804.553 259,804 L259,785 L284,785 C284.552,785 285,785.447 285,786 L285,793 L285,793 Z M285,796 L285,797 L281,797 L281,796 L281,795 L285,795 L285,796 L285,796 Z M283,777 L283,783 L263.5,783 L283,777 L283,777 Z M285,783 L285,776 C285,775.447 284.764,775.141 284.25,774.938 C283.854,774.781 283.469,774.875 283,775 L257,783 L257,805 C257,806.104 257.896,807 259,807 L285,807 C286.104,807 287,806.104 287,805 L287,785 C287,783.896 286.104,783 285,783 L285,783 Z" id="wallet" sketch:type="MSShapeGroup">
-
-</path>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <g id="Page-1" transform="matrix(24.2424,0,0,24.2424,36.3636,0)">
+        <g transform="matrix(0.0419745,0,0,0.0420097,-1.58645,-0.182299)">
+            <path d="M58.216,239.947L62.24,764.319L730.248,764.319L730.248,240.51L58.216,239.947Z" style="fill:none;stroke:rgb(59,48,182);stroke-width:52.06px;"/>
+        </g>
+        <g transform="matrix(0.04125,0,0,0.04125,-1.5,0)">
+            <path d="M62.588,237.6L689.307,40.2L689.307,237.652" style="fill:none;stroke:rgb(59,48,182);stroke-width:53px;"/>
+        </g>
+        <g transform="matrix(0.04125,0,0,0.04125,-1.5,0)">
+            <path d="M733.548,485.669L593.68,485.669L593.68,579.952L733.548,579.952" style="fill:none;stroke:rgb(59,48,182);stroke-width:53px;stroke-linecap:square;"/>
         </g>
     </g>
 </svg>

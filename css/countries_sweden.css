@@ -1,0 +1,333 @@
+.main_class {
+    min-height: 60vh;
+}
+
+.hero_section {
+    padding-top: 3vw;
+    position: relative;
+    overflow: hidden; 
+    background-color: #472EBF;
+    color: white;
+}
+
+.page_countries_sweden .nav-link-countries {
+    background-color: white;
+    color: #472EBF;
+}
+
+.pattern_box {  
+    position: absolute;
+    top: 4.5vw;
+    right: -1rem;
+    display: none; 
+    width: 14rem;
+    height: 14rem;
+    color:white;
+    opacity: 0.95;
+}
+
+.image_class {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero_text_box {
+    position: relative;
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+    padding-bottom: 2.3rem;
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .hero_text_box {
+        padding-right: calc(0.25rem * 72);
+    }
+}
+
+.countries {
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.hero_subtitle_text {
+    margin-top: 0.5rem;
+    max-width: 48rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 2.25rem;
+    line-height: calc(2.5 / 2.25);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+
+}
+
+@media (min-width: 768px) {
+    .hero_subtitle_text {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+}
+
+
+.country_chooser_outer {
+    background-color: #472EBF;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+
+}
+
+.country_chooser_inner {
+    display: flex;
+    align-items: end;
+    margin-inline: auto;
+    max-width: 72rem;
+    gap: 0.25rem;
+    padding-inline: 1.25rem;
+}
+
+.rwanda_tab, .sweden_tab{
+    padding: 1.25rem;
+    padding-block: calc(0.25rem * 1.5);
+
+    border-top-left-radius: calc(1rem + 4px);
+    border-top-right-radius: calc(1rem + 4px);
+
+    
+    font-family: "Outfit", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1,5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.sweden_tab{
+    background-color: white;
+    color:#472EBF;
+}
+
+.rwanda_tab{
+    background-color: #472EBF;
+    color:white;
+}
+
+.section_country_basics {
+    margin-inline: auto;
+    max-width: 72rem;
+    display:grid; 
+    gap: 1rem; 
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .section_country_basics {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.rwanda_image {
+    margin-inline: auto;
+    aspect-ratio: 16 / 8;
+    width: 100%;
+    border-radius: calc(1rem - 2px);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.text_lg {
+    font-size: 1.125rem;
+    line-height: 28px;
+    font-family: "Figtree", sans-serif;
+}
+
+.facts_list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #472EBF;
+    color: white;
+}
+
+.facts_item {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+    padding-inline: 1.25rem;
+    padding-block: 0.75rem;
+    last: border-bottom-width: 0px;
+}
+
+.facts_caption {
+    font-size: 0.75rem;
+    line-height: calc(1/0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+
+}
+
+.facts_bottom {
+    font-weight: 600;
+}
+
+.culture_section {
+    background-color: #EBEFFF;
+}
+
+.culture_facts {
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+}
+
+.good_to_know {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: calc(2.25 / 1.875);
+    font-weight: 800;
+    color: #111184;
+}
+
+.culture_list {
+    display:grid; 
+    margin-top: 1.5rem;
+    column-gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .culture_list {
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+}
+
+.culture_point {
+    gap: 1rem;
+    display: flex; 
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-color:#472EBF/30;
+    padding-block: 1.25rem;
+}
+
+.hero_pattern_box {
+    position: absolute;
+    top: 4.5vw;
+    right: -1rem;
+    width: 14rem;
+    height: 14rem;
+    color:white;
+    opacity: 0.95;
+}
+
+.hero_pattern {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tip {
+    font-size: 0.75rem;
+    line-height: calc(1/0.75);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color:#472EBF !important;
+}
+
+.culture_caption {
+    font-family: "Outfit", sans-serif;
+    color: #111184;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: calc(1.75/1.25);
+}
+
+.culture_more {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+}
+
+.film_section {
+    margin-inline: auto;
+    max-width: 72rem;
+    display:grid; 
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .film_section {
+        grid-template-columns: 1fr 1.4fr;
+    }
+}
+.watch {
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color:#472EBF !important;
+}
+
+.sustainable_text {
+    margin-top: 0.25rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: calc(2.25 / 1.875);
+    font-weight: 800;
+    color: #111184;
+}
+
+.film_text {
+    margin-top: 0.75rem;
+    color: #111184;
+}
+
+.film_box {
+    display: flex;
+    flex-direction: column; 
+    aspect-ratio: 16 / 9;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(1rem + 12px);
+    border-style: solid;
+    border-width: 2px;
+    border-style: dashed;
+    border-color:#472EBF;
+    background-color: #EBEFFF;
+    padding: 1rem;
+    text-align: center;
+    color:#472EBF !important;
+}
+
+.play_icon {
+    font-size: 2.25rem;
+    line-height: calc(2.5 / 2.25);
+}
+.film_screen_large_text {
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.film_screen_small_text {
+    font-size: 0.75rem;
+    line-height: calc(1/0.75);
+    opacity: 0.7;
+}

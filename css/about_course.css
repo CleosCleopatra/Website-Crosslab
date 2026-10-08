@@ -1,187 +1,387 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
 
-* {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_class {
+    min-height: 60vh;
+}
+
+.page_about_course .nav-link-about {
+    background-color: white;
+    color: #472EBF;
+}
+
+.hero {
+    position: relative; /*Menas it can be used as a reference for other stuff*/
+    overflow: hidden;
+    background-color: #472EBF;
+    color: white;
+    padding-top: 5vw;
+}
+
+.pattern-box { 
+    gap: 0px;
+    color: --primary-foreground;
+    position:absolute;
+    right: -1rem;
+    display: none; 
+    width: 14rem;
+    opacity: 0.95;
+    width: 20vw;
+}
+
+@media (min-width: 768px) {
+    .pattern-box {
+        display:grid;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pattern-box {
+        width: 16rem; 
+    }
+}
+
+.pattern_image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hero_text {
+    position: relative; 
+    margin-inline: auto;
+    max-width: 72rem;
+    padding: 2rem 1.25rem 2.5rem;
+}
+@media (min-width: 768px) {
+    .hero_text {
+        padding-right: 18rem;
+    }
+}
+
+.about_course {
+    font-size: 0.875rem;
+    line-height:20px;
+    --tw-font-weight: 700;
+    font-weight: 700;
+    text-transform: uppercase;
+    --tw-tracking: 0.1em;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    font-variation-settings: normal;
+}
+
+.basic_stats_text {
+    max-width: 48rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 2.25rem;
+    line-height: 1.05;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+}
+@media (min-width: 768px) {
+    .basic_stats_text {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+}
+
+.basic_student_info {
+    max-width: 42rem;
+    margin-top: 1rem;
+    font-family: Figtree, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    opacity: 0.9;
+    font-weight: 400;
 }
 
 
 
-html,
-body{
-    margin: 0; /* remove white border around page*/
-    width: 100%;
-    height: 100%;
-}
 
-body {
-    font-family: 'Manrope', sans-serif;
-}
-
-
-.top-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    display: flex;  /*Make it so we can chose how we want to arrange the stuff */
-    justify-content: space-between; /*Put space between items so thay are pushed apart */
-    align-items: center; /*Align the stuff verticlaly*/
-    
-    padding: 2.2vh 2.3vw; /*Add padding within the header */
-
-    z-index: 3;
-
+.basic_course_info { /*("mx-auto grid max-w-5xl gap-8 px-5 py-10 text-ink md:grid-cols-[1fr_auto_1.15fr] md:gap-14") */
+    margin-inline: auto;
+    display: grid; 
+    max-width: 64rem;
+    gap: 2rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+    color: #111184;
 }
 
 
-.logo-area {
-    left: 3vw;
+@media (min-width: 768px) {
+    .basic_course_info {
+        grid-template-columns: 1fr auto 1.15fr;
+        gap: 3.5rem;
+    }
+}
+
+.what_do { /*("font-display text-3xl font-extrabold text-ink")*/
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    --tw-font-weight: 800;
+    font-weight: 800;
+    color: #111184;
+}
+
+.crosslab_info_1 {
+    margin-top: 0.75rem;
+    font-family: "Figtree", sans-serif;
+}
+.crosslab_info_2 {
+    margin-top: 0.75rem;
+}
+
+.line {
+    display: none; 
+    width: 0.25rem;
+    border-radius: 9999px;
+    background-color: #472EBF;
+}  
+
+@media (min-width: 768px) {
+    .line {
+        display: block;
+    }
+}
+
+.basic_info_list {
+    align-content: flex-start;
+}
+
+.basic_info_list_item {
     display: flex;
     align-items: center;
-    gap: 0.2vw; /* Gap between components */
-    font-size: 2.4vw;
-    font-weight: bold;
-    font-family: 'Space Grotesk', sans-serif;
-    color: white
+    gap: 1rem;
+    padding-block: 0.75rem;
+}
 
-} 
+.basic_info_list_item + .basic_info_list_item {
+    margin-top: 0.5rem;
+}
 
-.logo-area img {
-    width: 4vw;
+.icon {
+    display: flex; 
+    flex-shrink: 0;
+    align-items: center; 
+    justify-content: center; 
+    color:#472EBF;
+    width: 32px; 
+}
+
+.info_title {
+    font-size:1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+.info_info {
+    --tw-font-weight: 400;
+    font-weight: 400;
+}
+
+.what_you_gain_full_block {
+    margin-inline: auto;
+    display: grid;
+    max-width: 80rem;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+    color:#111184;
+
 }
 
 
-.menu {
+@media (min-width: 768px) {
+    .what_you_gain_full_block {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.what_you_gain_text {
+    background-color: oklch(95.5% 0.028 277);
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .what_you_gain_text {
+        padding: 2.5rem;
+    }
+}
+
+.gain_text {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    --tw-font-weight: 800;
+    font-weight: 800;
+    color:#111184;
+}
+
+.gains_list {
+    margin-top: 1.25rem;
+}
+
+
+.gain_point {
     display: flex;
-    gap: 2vw;
+    align-items: center;
+    gap: 1rem;
 }
 
-.menu a {
-    color: white; /* Makes the a (links) in menu white*/
-    text-decoration: none; /* Removes the underline that otherwise exist */
-    font-size: 1.2vw;
-    padding: 0.05vw 0.15vw;
-    -webkit-text-stroke: 3px #4930BC;
-    paint-order: stroke fill;
-
-    font-weight: 300;
+.gain_point + .gain_point {
+    margin-top: 1rem;
 }
 
-.fading_screen {
-    position: relative;
-    width: 100vw;
-}
-
-.fading_screen img {
-    display: block;
-    width:100%;
-}
-
-.fading_screen::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to left,
-        transparent 20%,
-        #3020b8 100%
-    );
-}
-
-
-.apply_course_button{
-    margin: 0 0 0 0;
-    background: white;
-    border-radius: 10%;
-    color: #3020b8;
-    padding: 1vw 3vw 1vw 3vw;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.apply_course_button img{
-    width: 1vw;
-}
-
-.introduction {
-    position: relative;
-    text-align: left;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.intro_info {
-    position: absolute;
-    top: 7vw;
-    left: 2vw;
+.number {
+    display: flex; 
+    height: 3rem;
+    width: 3rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: #472EBF;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
     color: white;
-    width: 30vw;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
-.intro_info h1{
-    font-size: 4vw;
-    margin: 0 0 1.5vw 0;
+.gain_title {
+    --tw-font-weight: 700;
+    font-weight: 700;
+    font-style: italic;
+    color:#111184;
 }
 
-.intro_info p{
-    margin: 0 0 3vw 0;
+.gain_info {
+    font-size:  0.875rem;
+    line-height: 1.4;
+    font-style: italic;
 }
 
-.apply_course_button {
-    width: 5vw;
-    background-color: white;
-    border-radius: 1vw;
 
+.facetiming_image {
+    width: 100%;
+    height: 100%;
+    min-height: 30rem;
+    object-fit: cover;
 }
 
-.summary_section {
+
+.theme_box {
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+    color:#111184;
+}
+
+.theme_top {
+    display: flex; 
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.theme_logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: calc(1rem + 4px);
+    background-color: #472EBF;
+    padding: 0.25rem;
+    color: white; 
+}
+
+.theme_image_class {
+    height: 100%;
+    width: 100%;
+}
+
+.theme_title {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #472EBF !important;
+}
+
+.this_theme {
+    margin: 0;
+    margin-top: 0.4rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2rem;
+    font-weight: 800;
+    color:#111184
+}
+
+.theme_text {
+    max-width: 48rem;
+    margin-top: 0.75rem;
+    font-family: "Figtree", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #111184;
+}
+
+.video_boxes {
+    margin-top: 1.25rem;
+    display: grid;
+    gap: 1rem; 
+}
+
+@media (min-width: 768px) {
+    .video_boxes {
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+}
+
+.inside_video {
     display: flex;
+    aspect-ratio: 16/9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(1rem + 12px);
+    border-style: solid;
+    border-width: 2px;
+    border-style: dashed;
+    border-color:#472EBF;
+    background-color: oklch(95.5% 0.028 277);
+    padding: 1rem;
+    text-align: center; 
+    color:#472EBF !important;
 }
 
-.basic_summary {
-    margin: 1.5vw 2vw 1vw 2vw;
-    width: 44vw;
-    color: #3020b8;
-    font-family: 'Space Grotesk', sans-serif;
+.play_button {
+    font-size: 2.25rem; 
+    line-height: 1.1rem;
 }
 
-.basic_summary p{
-    font-size: 1.3vw;
+.video_title {
+    margin-top: 0.5rem;
+    font-weight: 700;
 }
 
-.important_info_dots {
-    margin: 2.5vw 0 0 0;
-    background: #F0F3FE;
-    border-radius: 2vw;
-    padding: 2.5vw;
-    font-family: 'Space Grotesk', sans-serif;
-
+.video_soon {
+    font-size: 0.75rem;
+    line-height: 1.33rem;
 }
-
-.important_info_dots h1{
-    color: #3020b8;
-    font-size: 3vw;
-    padding: 0 0 1vw 0;
-    font-family: 'Space Grotesk', sans-serif;
-    margin: 0 0 0 0;
-}
-
-.basic_info_block {
-    display: flex;
-}
-
-.logo_images_basic {
-    width: 3vw;
-}
-
-.basic_info_text {
-    color: #3020b8;
-    line-height: 0vw;
-    padding: 0 0 0 2vw;
-}
-
-.basic_info_text h5{
-    font-weight: 200;
-}
-
-

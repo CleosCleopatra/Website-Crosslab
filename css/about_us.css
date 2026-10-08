@@ -1,0 +1,235 @@
+
+.ap {
+    min-height: 60vh;
+}
+
+.page_about_us .nav-link-about-us {
+    background-color: white;
+    color: #472EBF;
+}
+
+.hero {
+    padding-top: 5vw;
+    position: relative;
+    overflow: hidden;
+    background-color: #472EBF;
+    color: white;
+}
+
+.pattern_box {  
+    position: absolute;
+    top: 4.5vw;
+    right: -1rem;
+    display: none; 
+    width: 14rem;
+    height: 14rem;
+    color:white;
+    opacity: 0.95;
+}
+
+@media (min-width: 64rem) {
+  .pattern_box {
+    display: grid;
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+
+
+.hero_text_box {
+    position:relative;
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+
+}
+@media (min-width: 48rem) {
+    .hero_text_box{
+        padding-right: 18rem;
+    }
+}
+
+.about_us {
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    max-width: 48rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 2.25rem;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+@media (min-width: 48rem) {
+    .tagline{
+        font-size: 3.75rem;
+        line-height:1;
+    }
+}
+
+.project_info_section {
+    margin-inline: auto;
+    display: grid;
+    max-width: 72rem;
+    gap: 1rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+}
+
+@media (min-width: 48rem) {
+    .project_info_section{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.project_info_text { /*space-y-3*/
+    font-size: 1.125rem;
+    line-height: calc(1.75/1.125)
+}
+
+.project_info_text p + p {
+    margin-top: 0.75rem;
+}
+
+.project_info_list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 0.75rem;
+}
+
+.fuse_point {
+    border-radius: calc(1rem + 12px);
+    background-color: #472EBF;
+    padding: 1.25rem;
+    color:white;
+}
+
+.point_title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    line-height: calc(2 / 1.5);
+    font-weight: 800;
+}
+
+.under_text {
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+}
+
+.unipod_point {
+    border-radius: calc(1rem + 12px);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #472EBF;
+    padding: 1.25rem;
+
+/*text-primar*/
+}
+
+.africa_program_point {
+    grid-column: span 2 / span 2;
+    border-radius: calc(1rem + 12px);
+    background: #EBEFFF;
+    padding: 1.25rem;
+}
+
+.africa_point_title {
+    font-weight: 700;
+    color: #111184;
+
+}
+
+.section_us {
+    background-color: #EBEFFF;
+}
+
+.us_persons {
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem;
+
+}
+
+.the_team {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.875rem;
+    line-height: calc(2.25 / 1.875);
+    font-weight: 800;
+    color: #111184;
+
+}
+
+.us_list {
+    margin-top: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 0.75rem;
+}
+
+@media (min-width: 48rem) {
+    .us_list{
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+    }
+}
+
+.person_fact {
+    overflow: hidden; 
+    border-radius: calc(1rem + 12px);
+    background-color: #ffffff;
+}
+
+.number {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #472EBF;
+    font-family: "Outfit", sans-serif;
+    font-size: 2.25rem;
+    line-height: calc(2.5 / 2.25);
+    font-weight: 800;
+    color: white;
+}
+
+.one_person_text {
+    padding: 1rem;
+}
+
+.name_text {
+    font-weight: 700;
+    color:#111184;
+}
+
+.title_text {
+    font-size: 0.875rem;
+    line-height: calc(1.25/0.875);
+    color: #2b3384;
+}
+
+.button_text_block {
+    margin-top: 1.5rem;
+}
+
+.button_text_link {
+    font-weight: 700;
+    color:#472EBF !important;
+    text-decoration-line: underline;
+}
+
+.image_class {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
