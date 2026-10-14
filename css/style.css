@@ -84,7 +84,7 @@ body {
     position: absolute;
 
     left: 4.5%;
-    top: 24.5%;
+    top: 10.5%;
     z-index: 2; /* Higher z-index, further up */
 }
 
@@ -152,7 +152,7 @@ body {
     position: absolute;
     
     right: 0;
-    top: 2vh;
+    top: -6.5vh;
     
     width: 35%;
     height: auto;

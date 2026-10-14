@@ -33,11 +33,12 @@
    ========================= */
 
 .faq-hero {
+    padding-top: 2vw;
     position: relative;
     overflow: hidden;
-
-    background-color: var(--primary);
-    color: var(--primary-foreground);
+    background-color: #472EBF;
+    color: white;
+    min-height: 14.5rem;
 }
 
 
@@ -46,8 +47,16 @@
 
     max-width: 72rem;
     margin-inline: auto;
+    padding-inline: 1.25rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
 
-    padding: 2rem 1.25rem 2.5rem;
+}
+
+@media (min-width: 48rem) {
+    .faq-hero-inner {
+        padding-right: 18rem;
+    }
 }
 
 
@@ -85,7 +94,7 @@
 .faq-patterns {
     position: absolute;
 
-    top: 0;
+    top: 0.5vw;
     right: -1rem;
 
     display: none;
@@ -93,10 +102,18 @@
     width: 14rem;
     height: 14rem;
 
-    grid-template-columns: repeat(3, 1fr);
-
     opacity: 0.95;
 }
+
+@media (min-width: 64rem) {
+    .pattern_box {
+        display: grid;
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+
 
 
 .faq-patterns img {
@@ -241,14 +258,6 @@
    ========================= */
 
 @media (min-width: 768px) {
-
-    .faq-hero-inner {
-        padding-top: 2rem;
-        padding-bottom: 2.5rem;
-
-        padding-right: 18rem;
-    }
-
 
     .faq-title {
         font-size: 3.75rem;

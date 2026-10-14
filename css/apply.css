@@ -25,7 +25,7 @@
     overflow: hidden; 
     background: var(--primary); 
     color: var(--primary-foreground); 
-    padding-top: 3vw;
+    padding-top: 0.5vw;
 }
 .hero-in { 
     display: grid; 
@@ -280,6 +280,10 @@
 .mail { 
     text-decoration: underline; 
     text-underline-offset: 4px; 
+    margin: .25rem 0 0; 
+    font-size: .875rem; 
+    opacity: .9; 
+    color: #ffffff;
 }
 .apply-link { 
     position: relative; 

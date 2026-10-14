@@ -2,6 +2,11 @@
     min-height: 60vh;
 }
 
+.page_countries_rwanda .nav-link-countries {
+    background-color: white;
+    color: #472EBF;
+}
+
 .page_countries_sweden .nav-link-countries {
     background-color: white;
     color: #472EBF;
@@ -17,7 +22,7 @@
 
 .pattern_box {  
     position: absolute;
-    top: 4.5vw;
+    top: 3vw;
     right: -1rem;
     display: none; 
     width: 14rem;
@@ -39,7 +44,7 @@
     max-width: 72rem;
     padding-inline: 1.25rem;
     padding-bottom: 2.3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -228,7 +233,7 @@
 
 .hero_pattern_box {
     position: absolute;
-    top: 4.5vw;
+    top: 0vw;
     right: -1rem;
     width: 14rem;
     height: 14rem;

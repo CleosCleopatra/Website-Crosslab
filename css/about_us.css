@@ -9,7 +9,7 @@
 }
 
 .hero {
-    padding-top: 5vw;
+    padding-top: 2vw;
     position: relative;
     overflow: hidden;
     background-color: #472EBF;
@@ -18,7 +18,7 @@
 
 .pattern_box {  
     position: absolute;
-    top: 4.5vw;
+    top: 0.5vw;
     right: -1rem;
     display: none; 
     width: 14rem;
